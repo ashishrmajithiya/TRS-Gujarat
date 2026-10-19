@@ -980,10 +980,10 @@
     ["θ1 " + cur[0].toFixed(1) + "°", "θ2 " + cur[1].toFixed(1) + "°", "θ3 " + cur[2].toFixed(1) + "°"].forEach(function (s, i) { ctx.fillStyle = C.text; ctx.fillText(s, 12, 20 + i * 16); });
   }
   function layout() {
-    var r = cv.getBoundingClientRect(); if (!r.width) return false;
+    var r = cv.getBoundingClientRect(); if (!r.width || r.width < 60 || r.height < 60) return false;
     W = r.width; H = r.height; dpr = Math.min(2, window.devicePixelRatio || 1);
     cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr); ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    sc = Math.min((W - 24) / 2 / VIEW, (H - 30) / (VIEW + 110)); ox = W / 2; oy = H - 22 - 90 * sc;
+    sc = Math.max(0.05, Math.min((W - 24) / 2 / VIEW, (H - 30) / (VIEW + 110))); ox = W / 2; oy = H - 22 - 90 * sc;
     return true;
   }
   $("lab-go").addEventListener("click", go);
