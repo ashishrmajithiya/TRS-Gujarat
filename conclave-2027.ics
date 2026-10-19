@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//TRS Local Chapter – Gujarat//Conclave 2027//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gujarat-robotics-conclave-2027@trs-gujarat.netlify.app
+DTSTAMP:20261017T000000Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270124
+SUMMARY:Industry-Academia Robotics Conclave 2027
+LOCATION:Sanskardham Campus\, Bopal-Ghuma\, Sanand Road\, Ahmedabad\, Gujarat 382115
+DESCRIPTION:Robotics for Industry\, Society and the Future. Organised by TRS Local Chapter – Gujarat. https://trs-gujarat.netlify.app/#conclave
+URL:https://trs-gujarat.netlify.app/#conclave
+END:VEVENT
+END:VCALENDAR
